@@ -1,0 +1,131 @@
+{
+  "countries": [
+    {
+      "name": "Brazil",
+      "code": "BRA",
+      "region": "Americas",
+      "capital": "Brasília",
+      "population": 212559409,
+       "currency": "Brazilian real",
+       "language": "Portuguese"
+    },
+    {
+      "name": "Pakistan",
+      "code": "PAK",
+      "region": "Asia",
+      "capital": "Islamabad",
+      "population": 260892331,
+       "currency": "Pakistani rupee",
+        "language": "Urdu"
+    },
+    {
+      "name": "Benin",
+      "code": "BEN",
+      "region": "Africa",
+      "capital": "Porto-Novo",
+      "population": 12123198,
+       "currency": "West African CFA franc",
+        "language":  "French"
+    },
+    {
+      "name": "Botswana",
+      "region": "Africa",
+      "code": "BWA", 
+      "capital": "Botswan",
+      "population": 11333333,
+      "currency": "Botswana pula",
+       "language": "English"
+    },
+    {
+     "name": "United States of America",
+     "code": "USA",
+      "region": "Americas",
+      "capital": "Washington, D.C.",
+      "population": 329484123,
+       "currency": "United States dollar",
+        "language": "English"
+    },
+    {
+       "name": "Australia",
+       "code": "AUS",
+      "region": "Oceania",
+      "capital": "Canberra",
+      "population": 256870411,
+       "currency": "Australian dollar",
+        "language": "English"
+    },
+     {
+      "name": "India",
+      "code": "IND",
+      "region": "Asia",
+      "capital": "New Delhi",
+      "population": 1251100000,
+      "currency": "Indian rupee",
+      "language": "Hindi"
+    },
+     {
+       "name": "China",
+      "code": "CHN",
+      "region": "Asia",
+     "capital": "Beijing",
+      "population": 1402112000,
+       "currency":"Macanese pataca",
+        "language": "Chinese"
+    },
+     {
+      "name": "Indonesia",
+      "code": "IDN",
+      "region": "Asia",
+      "capital": "Jakarta",
+      "population": 273523621,
+      "currency":  "Indonesian rupiah",
+       "language": "Indonesian"
+    },
+     {
+     "name": "Canada",
+      "code": "CAN",
+       "region": "Americas",
+       "capital": "Ottawa",
+      "population": 38005238,
+      "currency": "Canadian dollar",
+       "language": "English"
+    },
+    {
+     "name": "Ireland",
+      "code": "IRL",
+       "region": "Europe",
+      "capital": "Dublin",
+      "population": 4994724,
+      "currency": "Euro",
+       "language": "English"
+    },
+    {
+     "name": "Germany",
+      "code": "DEU",
+       "region": "Europe",
+       "capital": "Berlin",
+      "population": 83240525,
+       "currency": "Euro",
+        "language": "German"
+    },
+    {
+      "name": "Spain",
+      "code": "ESP",
+      "region": "Europe",
+      "capital": "Madrid",
+      "population": 47351567,
+       "currency":"Euro",
+        "language": "Spanish"
+    },
+    {
+    "name": "France",
+      "code": "FRA",
+       "region": "Europe",
+       "capital": "Paris",
+      "population": 67391582,
+       "currency": "Euro",
+        "language": "French"
+    }
+
+  ]
+}
