@@ -30,39 +30,36 @@ const Countries = () => {
     sortField(countryList, value);
     setSort(value);
     setCountryList(countryList);
-  }, [sort, countryList, setCountryList])
+  }, [ countryList, setCountryList])
 
   useEffect(() => {
     const { countries = [] } = countryData; 
     sortField(countries, sort);
     setCountryList(countries);
-  }, []);
+  }, [sort]);
 
-  const handleCountrySelect = (country: CountriesProp) => {
-    setSelectedCountry(country);
-  }
-  
   const handleClearInput = () => {
     setSearchInput("");
     setClearSearch(false);
   }
+  const handleCountrySelect = (country: CountriesProp) => {
+      setSelectedCountry(country);
+  }
 
   const updatedCountryList = useMemo(() => {
-   return !!countryList.length ? countryList.filter((countryItem: CountriesProp) => {
-          if (searchInput === "") {
-            return countryItem
-          } else if(filterList(countryItem, searchInput)) {
-            return countryItem;
-          }
-   }).map((country) => {
-     return (
-       <CountryItemWrapper key={country.population} onClick={() => handleCountrySelect(country)}>
-          <h2>{country?.name}</h2>
-        </CountryItemWrapper>
-          )
-        })
-     : null
-  }, [countryList, searchInput,handleSelectChange, handleCountrySelect])
+    if (!countryList.length) return null;
+    return countryList.filter((countryItem: CountriesProp) => {
+      if (searchInput === "") {
+        return countryItem
+      } else if (filterList(countryItem, searchInput)) {
+        return countryItem;
+      }
+    }).map((country) => (
+      <CountryItemWrapper key={country.population} onClick={() => handleCountrySelect(country)}>
+        <h2>{country?.name}</h2>
+      </CountryItemWrapper>
+    ));
+  }, [countryList, searchInput, handleCountrySelect])
 
   return (
     <>
