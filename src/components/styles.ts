@@ -41,19 +41,20 @@ export const SeachBoxWrapper = styled.div`
         min-height:40px;
         position: relative;
         > .search-input{
-            width:98%;
+            width:90%;
             border: solid 2px #ccc;
             font-size: 14px;
+            padding-left: 10px;
         }
         > .search-input:focus{
             outline: 0;
         }
         >span{
             position: absolute;
-            right: 12px;
-            top: 10px;
-            font-size: 20px;
-            color: #444444;
+            right: 40px;
+            top: 6px;
+            font-size: 24px;
+            color: #888888;
             cursor: pointer;
         }
 `;
@@ -84,6 +85,7 @@ export const CountryItemWrapper = styled.div`
         cursor: pointer;
         &:hover{
             transform: scale(1.1);
+            transition: all .6s;
         }
         > div{
             margin: 8px;
